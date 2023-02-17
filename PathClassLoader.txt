@@ -1,0 +1,2 @@
+6 May 2020 14:54:28 GMT: Log 'PathClassLoader.txt' opened: 6 May 2020 14:54:28 GMT with name C:\Users\wmwms\OneDrive - George Mason University\CodingProjects\LeetCode\PathClassLoader.txt
+6 May 2020 14:54:28 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[C:\Users\wmwms\OneDrive\Desktop\drjava-gmu.jar]'
