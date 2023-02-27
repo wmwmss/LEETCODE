@@ -4,10 +4,37 @@ import sys
 print("PYTHONPATH:", os.environ.get('PYTHONPATH'))
 print("PATH:", os.environ.get('PATH'))
 sys.path.insert(0, '/Library/Frameworks/Python.framework/Versions/3.10/bin')
+sys.path.insert(0, '/Users/ethan/mambaforge/bin/python')
+
+try:
+    import numpy
+    print('imported')
+except ImportError:
+    # install package
+    import subprocess
+    subprocess.check_call(['pip', 'install', 'numpy'])
+    import numpy
+
+try:
+    import pandas
+except ImportError:
+    # install package
+    import subprocess
+    subprocess.check_call(['pip', 'install', 'pandas'])
+
+try:
+    import matplotlib
+except ImportError:
+    # install package
+    import subprocess
+    subprocess.check_call(['pip', 'install', 'matplotlib'])
 
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
+import scipy
+import json
+import pyomo
 
 data = pd.read_csv('/Users/ethan/Library/CloudStorage/OneDrive-GeorgeMasonUniversity-O365Production/CodingProjects/LeetCode/NeuralNetworkFromScratch/data/mnist_train.csv')
 
